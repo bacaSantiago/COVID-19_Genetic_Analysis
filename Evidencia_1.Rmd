@@ -1,0 +1,240 @@
+---
+title: "Evidencia_1.Rmd"
+author: "Alejandro Santiago Baca Eyssautier - A01656580"
+date: "`r Sys.Date()`"
+output: html_document
+---
+ 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library("seqinr")
+library("ggplot2")
+```
+
+## PARTE 1
+1.	Investiga, ¿Cuál es la situación actual de COVID-19 a nivel mundial, en México, en tu estado de origen y en tu municipio, alcaldía o colonia? Puedes iniciar tu búsqueda en el sitio de Johns Hopkins:  https://coronavirus.jhu.edu/map.html
+
+Actualmente, la situación mundial ante la emergencia de COVID-19 sigue siendo un desafío importante para la salud pública global. Aunque se han logrado importantes avances en la investigación, el tratamiento y la prevención del virus, la pandemia continúa afectando a millones de personas en todo el mundo. Algunos países han logrado controlar la propagación del virus mediante la implementación de medidas de distanciamiento social, el uso de mascarillas y la vacunación masiva de su población. Sin embargo, otros países todavía enfrentan desafíos importantes en la lucha contra el virus debido a la falta de recursos, la desigualdad en la distribución de vacunas y la resistencia de algunos sectores de la población a las medidas de prevención.
+
+En las siguientes gráficas podemos observar que el punto crítico de la pandemia cada día se aleja más, pues se observa una disminución generalizada en cuanto a los casos confirmados y las muertes derivadas de los síntomas del virus. No obstante, se continúan desarrollando nuevas tecnologías y explorando alternativas médicas.
+
+<center>
+![Situación actual casos COVID-19](/Users/sbaca/Desktop/Escuela/Tec/2do Semestre/Análisis de Biología Computacional/Evidencia_1/Gráficas/Tabla_1_casos.png){height=375px width=625px}<br>
+Nuevos casos al día de COVID-19 en el mundo. Obtenido de: [(Worldometers, 2023)](https://www.worldometers.info/coronavirus/#main_table)
+</center> <br>
+
+<center>
+![Situación actual muertes COVID-19](/Users/sbaca/Desktop/Escuela/Tec/2do Semestre/Análisis de Biología Computacional/Evidencia_1/Gráficas/Tabla_2_muertes.png){height=375px width=625px}<br>
+Muertes al día por COVID-19 en el mundo. Obtenido de: [(Worldometers, 2023)](https://www.worldometers.info/coronavirus/#main_table)
+</center> <br>
+
+En cuanto a México, podemos observar que nuestro país se encuentra en la posición #14 entre los países con más casos a la semana, y el #12 en cuanto a las muertes semanales. Sin embargo, estas no son cifras alarmantes, ya que México es el noveno país más poblado del mundo; por lo que las estadísticas indican una situación actual de acuerdo con la esperada y con respecto a los demás países.
+Sus respectivas gráficas en comparación a la situación mundial del virus son las siguientes:
+
+<center>
+![Situación actual casos COVID-19 México](/Users/sbaca/Desktop/Escuela/Tec/2do Semestre/Análisis de Biología Computacional/Evidencia_1/Gráficas/Tabla_3_Mex_casos.png){height=375px width=650px}<br>
+Nuevos casos al día de COVID-19 en México. Obtenido de: [(Worldometers, 2023)](https://www.worldometers.info/coronavirus/#main_table)
+</center> <br>
+
+<center>
+![Situación actual muertes COVID-19 México](/Users/sbaca/Desktop/Escuela/Tec/2do Semestre/Análisis de Biología Computacional/Evidencia_1/Gráficas/Tabla_4_Mex_muertes.png){height=375px width=650px}<br>
+Muertes al día por COVID-19 en el mundo. Obtenido de: [(Worldometers, 2023)](https://www.worldometers.info/coronavirus/#main_table)
+</center> <br>
+
+Por su parte, la CDMX y la alcaldía de Coyoacán han presentado mejoras en las últimas semanas. La tasa de positividad de las pruebas de COVID-19 ha disminuido alrededor del 10% y 8% respectivamente, asimismo, se ha logrado una mayor disponibilidad de camas de hospital y ventiladores para los pacientes. (CONACYT, 2023)
+
+En cifras totales, actualizadas a fecha de 21 de abril de 2023, podemos analizar la situación actual de COVID-19 de la siguiente manera:
+
+A nivel mundial tenemos:
+<ul> 
+  <li>Total de casos confirmados: 686,392,413</li>
+  <li>Total de fallecidos: 6,859,387</li>
+  <li>Total de personas recuperadas: 658,968,957</li>
+</ul>
+
+Respecto a la República Mexicana:
+<ul> 
+  <li>Total de casos confirmados: 7,574,620</li>
+  <li>Total de fallecidos: 333,745</li>
+  <li>Total de personas recuperadas: 6,819,077</li>
+</ul>
+
+En cuanto a la Ciudad de México, la situación actual de COVID-19 es la siguiente:
+<ul> 
+  <li>Total de casos confirmados: 1,887,876</li>
+  <li>Total de fallecidos: 44,138</li>
+  <li>Total de personas recuperadas: 1,783,920</li>
+</ul>
+
+Acerca de la situación en la alcaldía de Coyoacán:
+<ul> 
+  <li>Total de casos confirmados: 115,552</li>
+  <li>Total de fallecidos: 2,988</li>
+  <li>Total de personas recuperadas: 108,328</li>
+</ul>
+
+<br>
+
+2.	¿Cuál fue la primera variante del virus que se propagó a todo el mundo?
+
+La primera variante del COVID-19 que apareció fue la variante original, también conocida como la cepa WuHan, descubierta en China en diciembre de 2019; es por ello el nombre que conocemos. Sin embargo, la primera variante en esparcirse alrededor del mundo fue la variante D614G o "variante G", descubierta en Europa en febrero de 2020 y convirtiéndose rápidamente en la variante predominante por encima de la original. 
+Esta se caracteriza por una mutación en la proteína de la espícula del virus, que es la parte del virus que se adhiere a las células humanas y permite que el virus infecte a las células.
+
+<br>
+
+3.	¿Cuáles son las otras variantes del virus que existen en otras regiones del mundo?
+
+Existen múltiples variantes del virus con características diferentes en cada región del mundo. Entre las más conocidas, encontramos las siguientes: (CDC, 2023)
+<ul> 
+  <li>Alpha (B.1.1.7): Identificada por primera vez en el Reino Unido en septiembre de 2020.</li>
+  <li>Beta (B.1.351): Identificada por primera vez en Sudáfrica en octubre de 2020.</li>
+  <li>Delta (B.1.617.2): Identificada por primera vez en India en diciembre de 2020.</li>
+  <li>Gamma (P.1): Identificada por primera vez en Brasil en diciembre de 2020.</li>
+  <li>Lambda (C.37): Identificada por primera vez en Perú en diciembre de 2020.</li>
+  <li>Ómicron (BA.1): Identificada por primera vez en Sudáfrica en noviembre de 2021.</li>
+</ul> 
+
+<br>
+
+4.	¿Cómo buscarías información de la variante del virus en tu país? 
+
+Personalmente, buscaría información sobre la situación actual de COVID-19 en México por medio de 4 medios principalmente:
+<ul> 
+  <li>Primeramente buscaría en el sitio web oficial de la Secretaría de Salud Pública, en donde se publican actualizaciones diarias sobre la situación del COVID-19 en el país. Cuentan con una sección llamada "variantes" con información sobre la variante actual que se está propagando; así como un tablero con los principales datos relacionados al virus.</li>
+  <li>A continuación, comprobaría la información en la página web de la Organización Panamericana de la Salud (OPS), donde se publican actualizaciones sobre la situación del COVID-19 en América Latina y el Caribe. Al igual que en otros sitios web de organizaciones médicas y científicas en México, como el Instituto Nacional de Enfermedades Respiratorias (INER) o la Sociedad Mexicana de Infectología (SMI).</li>
+  <li>De igual forma, contactaría a centros de investigación y universidades nacionales para consultar la información que deseo saber, como el Instituto Nacional de Enfermedades Respiratorias (INER) y la Universidad Nacional Autónoma de México (UNAM).</li>
+  <li>Por último, consultaría redes sociales, o artículos científicos especializados y creados por expertos en el área de salud. Los cuales a su vez, ofrecen opciones de contacto con médicos o especialistas en enfermedades respiratorias e infecciosas.</li>
+</ul> 
+
+<br>
+
+5.	Imagina que te encuentras en una situación similar a la de Li Wenliang, médico chino que intentó alertar sobre el brote de coronavirus en su país, pero fue detenido por las autoridades y obligado a retractarse, ¿qué harías en su caso? Selecciona un inciso:<br>
+    a) **Lo reportas al centro de investigación o la universidad**. 
+    b) Lo reportas a la prensa. 
+    c) Guardas la información. <br>
+Elige y justifica tu respuesta. Revisa el siguiente video como apoyo: https://youtu.be/eEUqCxP5Lvc
+
+Depende del contexto geográfico y político en el que me encuentre. Personalmente, si cuento con el apoyo de autoridades de calidad en un país en desarrollo, le informaría al centro de investigación o al gobierno para que juntos estudiemos el caso y encontremos la mejor solución antes de alarmar a la población. Ya que, si hiciera pública la información únicamente generaría caos e impedirían nuestros avances por encontrar una posible solución.
+
+No obstante, si me encontrara en un país de tercer mundo, incompetente en el tema y que no cuenta con las herramientas necesarias para desarrollar una solución, entonces, guardaría la información para estudiarla por mi cuenta. Ya que, si les informara a las autoridades probablemente me silenciarían y tratarían de llevarse el crédito antes que cooperar entre potencias.
+
+En cualquiera de los casos, si observara que la situación es crítica como con el COVID-19 y las autoridades se guardan la información para beneficio propio; entonces haría pública toda la información que encontré para promover la cooperación de todas las personas expertas en el tema, lo cual creo que es lo primordial en una situación así.
+
+<br>
+
+## PARTE 2
+1.	Obtén las secuencias de las variantes de SARS-CoV-2 desde el NCBI o el buscador de virus del NCBI.
+
+```{r data bases, echo=TRUE}
+alpha <- read.fasta("Alpha.fasta")[[1]]
+beta <- read.fasta("Beta.fasta")[[1]]
+delta <- read.fasta("Delta.fasta")[[1]]
+gamma <- read.fasta("Gamma.fasta")[[1]]
+omicron <- read.fasta("Omicron.fasta")[[1]]
+Wuhan_Hu_1 <- read.fasta("Wuhan-Hu-1.fasta")[[1]]
+```
+<br>
+
+2.	Calcula la longitud de las secuencias de cada variante.
+
+```{r longitudes}
+cat("Tamaño de Alpha: ", length(alpha), "\n")
+cat("Tamaño de Beta: ", length(beta), "\n")
+cat("Tamaño de Delta: ", length(delta), "\n")
+cat("Tamaño de Gamma: ", length(gamma), "\n")
+cat("Tamaño de Ómicron: ", length(omicron), "\n")
+cat("Tamaño de Wuhan-Hu-1: ", length(Wuhan_Hu_1), "\n")
+```
+<br>
+
+3.	Crea una gráfica donde compares las bases de ADN que componen a cada una de las variantes del virus.
+
+<center>
+```{r gráfica 1}
+COVID19_nucleotides <- data.frame(
+  Variante = rep(c("Alpha", "Beta", "Delta", "Gamma", "Ómicron", "Wuhan-Hu-1"), each = 4), 
+  Nucleotido = rep(c("Adenina", "Citosina", "Guanina", "Timina"), 6), 
+  Frecuencia = c(count(alpha,1), count(beta,1), count(delta,1), count(gamma,1), count(omicron,1), count(Wuhan_Hu_1,1))
+  )
+
+ggplot(data = COVID19_nucleotides, aes(x=Variante, y=Frecuencia, fill=Nucleotido)) +
+  geom_bar(position = "dodge", stat = "identity") +
+  ggtitle("Frecuencia de nucleótidos en diferentes variantes de COVID-19") +
+  theme_minimal() +
+  facet_grid(Nucleotido ~ .)
+```
+<br>
+
+Gráfica de barras vertical acerca de la frecuencia de nucleótidos en diferentes variantes de COVID-19
+</center> <br>
+
+<center>
+```{r gráfica 2}
+ggplot(COVID19_nucleotides, aes(x = Variante, y = Frecuencia, fill = Nucleotido, color = Variante)) +
+  geom_bar(stat = "identity") +
+  coord_polar(theta = "y") +
+  theme_void() +
+  labs(title = "Frecuencia de nucleótidos en diferentes variantes de COVID-19") +
+  geom_text(aes(label = Frecuencia), position = position_stack(vjust = 0.5), color = "black", size = 2.3)
+```
+<br>
+
+Gráfica de barras circular acerca de la frecuencia de nucleótidos en diferentes variantes de COVID-19 
+</center> <br>
+
+Las gráficas muestran la frecuencia de los cuatro nucleótidos (adenina, citosina, guanina y timina) en las variantes Alpha, Beta, Delta, Gamma, Ómicron y Wuhan-Hu-1 del virus del COVID-19. En la primera, cada nucleótido se representa por un color y una sección diferente; de forma que, observamos la diferencia de estos en cada variante. Mientras que en la segunda, cada nucleótido se representa por un relleno de color distinto, pero un contorno cambiante de acuerdo con la variante observada, las cuales empiezan con Alpha en el centro y terminan con Wuhan-Hu-1 en el exterior; asimismo, permite apreciar el tamaño de cada variable dependiendo de la longitud de su curva, lo cual puede ser relevante al momento de realizar un análisis. 
+
+<br>
+De manera general, se puede observar que la proporción de los nucleótidos es muy similar entre las diferentes variantes, lo que sugiere que todas ellas son derivadas del mismo virus (SARS-Cov-2) y pertenecen a una familia (Coronaviridae) con una estructura genética muy similar. Es por esta razón, que los síntomas que presenta un huésped son en su mayoría los mismos para cada variante de COVID-19 contraída, aunque con diversas variaciones en su intensidad. <br>
+Si bien, las gráficas pueden ayudar a visualizar y comparar estas proporciones entre diferentes variantes, lo cual es importante para el estudio de la evolución del virus y para la identificación de posibles tratamientos y vacunas efectivas, cabe señalar que estas no ofrecen información adicional sobre la virulencia, propagación o características específicas de cada variante en sí misma.
+
+<br> 
+Sin embargo, es importante tener en cuenta que incluso pequeñas diferencias en la proporción de nucleótidos pueden tener un gran impacto en la capacidad de un virus para infectar a las personas y propagarse. Por ejemplo, la variante Delta del COVID-19 ha demostrado ser más transmisible que otras variantes, lo que podría estar relacionado con mutaciones en la proteína de la espícula que le permite al virus unirse y penetrar las células humanas. Además, algunas variantes pueden tener mutaciones que afectan a otras proteínas del virus, como la proteína de la nucleocápside, que podrían influir en la gravedad de la enfermedad o la respuesta inmunitaria del cuerpo. <br> 
+Por lo tanto, aunque las variantes puedan parecer similares en términos de proporción de nucleótidos, aún pueden tener diferencias significativas en términos de su patogenicidad y transmisibilidad. <br> 
+
+<br> 
+
+4.	¿Cuál es el %GC de cada variante?
+
+```{r GC en virus}
+cat("Contenido de GC en Alpha:", GC(alpha), "%\n")
+cat("Contenido de GC en Beta:", GC(beta), "%\n")
+cat("Contenido de GC en Delta:", GC(delta), "%\n")
+cat("Contenido de GC en Gamma:", GC(gamma), "%\n")
+cat("Contenido de GC en Ómicron:", GC(omicron), "%\n")
+cat("Contenido de GC en Wuhan-Hu-1:", GC(Wuhan_Hu_1), "%\n")
+```
+<br>
+
+5.	Crea las secuencias contrasentido de cada variante.
+
+Limitamos las secuencias de los virus a los primeros y últimos 15 valores, en total 30, para un mejor análisis del funcionamiento del ejercicio.
+```{r contrasentido}
+reduced_alpha <- alpha[c(1:15, (length(alpha)-19):length(alpha))]
+reduced_beta <- beta[c(1:15, (length(beta)-19):length(beta))]
+reduced_delta <- delta[c(1:15, (length(delta)-19):length(delta))]
+reduced_gamma <- gamma[c(1:15, (length(gamma)-19):length(gamma))]
+reduced_omicron <- omicron[c(1:15, (length(omicron)-19):length(omicron))]
+reduced_Wuhan_Hu_1 <- Wuhan_Hu_1[c(1:15, (length(Wuhan_Hu_1)-19):length(Wuhan_Hu_1))]
+
+variantes <- c("Alpha", "Beta", "Delta", "Gamma", "Ómicron", "Wuhan-Hu-1")
+contrasentido <- function(virus_1, virus_2, virus_3, virus_4, virus_5, virus_6){
+  n <- 1
+  for (i in list(virus_1, virus_2, virus_3, virus_4, virus_5, virus_6)){
+    cat("                ",variantes[n], "\n")
+    cat("Virus original: ", i, "\nContrasentido:  ", rev(i), "\n\n")
+    n = n+1
+  }
+}
+contrasentido(reduced_alpha, reduced_beta, reduced_delta, reduced_gamma, reduced_omicron, reduced_Wuhan_Hu_1)
+```
+<br>
+
+## Referencias
+
+- CDC. (20 de marzo de 2023). Clasificaciones y definiciones de las variantes del SARS-CoV-2. Obtenido de espanol.cdc.gov: https://espanol.cdc.gov/coronavirus/2019-ncov/variants/variant-classifications.html <br>
+- CONACYT. (22 de abril de 2023). Covid-19 México. Obtenido de datos.covid-19.conacyt.mx: https://datos.covid-19.conacyt.mx <br>
+- Katella, K. (3 de febrero de 2023). Omicron, Delta, Alpha, and More: What To Know About the Coronavirus Variants. Obtenido de www.yalemedicine.org: https://www.yalemedicine.org/news/covid-19-variants-of-concern-omicron <br>
+- NCBI. (22 de abril de 2023). SARS-CoV-2 Variants Overview. Obtenido de www.ncbi.nlm.nih.gov: https://www.ncbi.nlm.nih.gov/activ <br>
+- Worldometers. (22 de abril de 2023). COVID-19 CORONAVIRUS PANDEMIC. Obtenido de www.worldometers.info: https://www.worldometers.info/coronavirus/#main_table <br>
+
